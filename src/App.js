@@ -6,7 +6,7 @@ import VideoLink from './components/VideoLink';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <h1>Welcome to Bethany Immanuel Website</h1>
       {/* <LatestVideo /> */}
       <VideoLink />
