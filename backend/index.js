@@ -10,10 +10,14 @@ app.get('/', (req, res) => {
     res.send('Hello, this is the backend!');
 });
 
+app.get('/api/test', (req, res) => {
+    res.json({ message: 'Hello from backend!' });
+});
+
 app.use('/users', userRoutes); // Register user routes
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+    console.log(`Backend is running on port ${port}`);
 });
 
 
